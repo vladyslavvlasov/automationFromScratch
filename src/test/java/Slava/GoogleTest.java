@@ -21,7 +21,7 @@ public class GoogleTest extends BaseTest
     @Test
     public void openHomePageFail()
     {
-        driver.get("https://www.google.com.ua");
+        driver.get("https://www.football.ua");
         Assert.assertEquals(driver.getCurrentUrl(),expectedWrongURL, "Expected current url to equal " + expectedURL);
     }
 }
