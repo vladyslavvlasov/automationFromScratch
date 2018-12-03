@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70adb43d-2a6c-4be2-9c73-1106727931ea" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/AllTests.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Slava/GoogleTest.class" afterPath="$PROJECT_DIR$/target/test-classes/Slava/GoogleTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/AlternativeTests.xml" afterPath="$PROJECT_DIR$/AlternativeTests.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="233">
+              <caret line="77" column="25" lean-forward="true" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -69,19 +65,21 @@
       <file leaf-file-name="AlternativeTests.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AlternativeTests.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FootballTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FootballTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Slava/FootballTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="323">
+              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,10 +109,10 @@
         <option value="$PROJECT_DIR$/src/test/java/Slava/AppTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Slava/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Slava/GoogleTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Slava/FootballTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/AlternativeTests.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/AllTests.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Slava/FootballTest.java" />
       </list>
     </option>
   </component>
@@ -674,7 +672,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -693,14 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Slava/FootballTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Slava/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -710,14 +702,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AlternativeTests.xml" />
-    <entry file="file://$PROJECT_DIR$/AlternativeTests.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AllTests.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -728,9 +712,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="233">
+          <caret line="77" column="25" lean-forward="true" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlternativeTests.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Slava/FootballTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
