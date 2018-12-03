@@ -15,6 +15,11 @@ public class FootballTest extends BaseTest {
     public void openHomePage()
     {
         driver.get("https://www.football.com.ua");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Assert.assertEquals(driver.getCurrentUrl(),expectedURL, "Expected current url to equal " + expectedURL);
     }
 }
