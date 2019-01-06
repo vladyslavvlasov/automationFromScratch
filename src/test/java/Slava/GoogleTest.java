@@ -1,12 +1,16 @@
 package Slava;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 /**
  * Unit test for simple App.
  */
+@Listeners(CustomizedListener.class)
 public class GoogleTest extends BaseTest
+
+
 {
     private String expectedURL= "https://www.google.com.ua/";
 

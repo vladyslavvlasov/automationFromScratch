@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestAll" duration-ms="7129" started-at="2018-12-03T21:04:32Z" finished-at="2018-12-03T21:04:39Z">
+  <suite name="TestAll" duration-ms="5820" started-at="2018-12-16T14:57:22Z" finished-at="2018-12-16T14:57:28Z">
     <groups>
     </groups>
-    <test name="Google Test" duration-ms="7129" started-at="2018-12-03T21:04:32Z" finished-at="2018-12-03T21:04:39Z">
+    <test name="Google Test" duration-ms="5820" started-at="2018-12-16T14:57:22Z" finished-at="2018-12-16T14:57:28Z">
       <class name="Slava.GoogleTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Slava.GoogleTest@4554de02]" name="setUp" is-config="true" duration-ms="3238" started-at="2018-12-03T23:04:32Z" finished-at="2018-12-03T23:04:35Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Slava.GoogleTest@15639440]" name="setUp" is-config="true" duration-ms="3178" started-at="2018-12-16T16:57:22Z" finished-at="2018-12-16T16:57:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openHomePage()[pri:0, instance:Slava.GoogleTest@4554de02]" name="openHomePage" duration-ms="3136" started-at="2018-12-03T23:04:35Z" finished-at="2018-12-03T23:04:38Z">
+        <test-method status="PASS" signature="openHomePage()[pri:0, instance:Slava.GoogleTest@15639440]" name="openHomePage" duration-ms="1868" started-at="2018-12-16T16:57:25Z" finished-at="2018-12-16T16:57:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openHomePage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Slava.GoogleTest@4554de02]" name="tearDown" is-config="true" duration-ms="743" started-at="2018-12-03T23:04:38Z" finished-at="2018-12-03T23:04:39Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Slava.GoogleTest@15639440]" name="tearDown" is-config="true" duration-ms="743" started-at="2018-12-16T16:57:27Z" finished-at="2018-12-16T16:57:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

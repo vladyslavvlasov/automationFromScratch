@@ -2,7 +2,7 @@
 
 <suite name="Alternative">
 
-    <test name="Google Test">
+    <test name="Football Test">
         <classes>
             <class name="Slava.FootballTest" >
             </class>

@@ -14,7 +14,7 @@ public class FootballTest extends BaseTest {
     @Test
     public void openHomePage()
     {
-        driver.get("https://www.football.com.ua");
+        driver.get("https://www.football.ua");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

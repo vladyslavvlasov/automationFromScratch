@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-TestAll">
-                    <span>H:\projects\automationFromScratch\AllTests.xml</span>
+                    <span>H:\projects\automationFromScratch\src\main\resources\AllTests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -135,13 +135,16 @@
         </div> <!-- panel TestAll -->
         <div panel-name="test-xml-TestAll" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">H:\projects\automationFromScratch\AllTests.xml</span>
+            <span class="header-content">H:\projects\automationFromScratch\src\main\resources\AllTests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;TestAll&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Slava.CustomizedListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Google Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Slava.GoogleTest&quot;&gt;
@@ -192,12 +195,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'openHomePage')
 data.setCell(0, 2, 'Slava.GoogleTest')
-data.setCell(0, 3, 3136);
+data.setCell(0, 3, 1868);
 window.suiteTableData['TestAll']= { tableData: data, tableDiv: 'times-div-TestAll'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-TestAll">
               </div> <!-- times-div-TestAll -->
             </div> <!-- times-div -->
@@ -237,11 +240,11 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">openHomePage</span>
-                <span class="method-start">3242 ms</span>
+                <span class="method-start">3194 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6380 ms</span>
+                <span class="method-start">5062 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
