@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TestAll">
-              <span class="suite-name border-passed">TestAll</span>
+              <span class="suite-name border-failed">TestAll</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-TestAll">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestAll" class="hide-methods failed suite-TestAll"> (hide)</a> <!-- hide-methods failed suite-TestAll -->
+                      <a href="#" panel-name="suite-TestAll" class="show-methods failed suite-TestAll"> (show)</a> <!-- show-methods failed suite-TestAll -->
+                    </span>
+                    <div class="method-list-content failed suite-TestAll">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="Slava.FootballTest" hash-for-method="openHomePage">openHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestAll -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestAll" class="hide-methods skipped suite-TestAll"> (hide)</a> <!-- hide-methods skipped suite-TestAll -->
+                      <a href="#" panel-name="suite-TestAll" class="show-methods skipped suite-TestAll"> (show)</a> <!-- show-methods skipped suite-TestAll -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestAll">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="Slava.FootballTest" hash-for-method="openHomePage">openHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestAll -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +145,92 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestAll" class="panel TestAll">
+          <div class="suite-TestAll-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Slava.FootballTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openHomePage">
+                  </a> <!-- openHomePage -->
+                  <span class="method-name">openHomePage</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected current url to equal https://www.google.com.ua/ expected [https://www.google.com.ua/] but found [https://www.football.ua/]
+	at Slava.FootballTest.openHomePage(FootballTest.java:23)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(football.ua test description that should fail)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestAll-class-failed -->
+          <div class="suite-TestAll-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Slava.FootballTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openHomePage">
+                  </a> <!-- openHomePage -->
+                  <span class="method-name">openHomePage</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected current url to equal https://www.google.com.ua/ expected [https://www.google.com.ua/] but found [https://www.football.ua/]
+	at Slava.FootballTest.openHomePage(FootballTest.java:23)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(football.ua test description that should fail)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestAll-class-skipped -->
           <div class="suite-TestAll-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -143,7 +257,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;TestAll&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;Slava.CustomizedListener&quot;/&gt;
+    &lt;listener class-name=&quot;reportutils.Listeners.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;reportutils.Listeners.AnnotationTransformer&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test name=&quot;Google Test&quot;&gt;
     &lt;classes&gt;
@@ -154,6 +269,11 @@
       &lt;/class&gt; &lt;!-- Slava.GoogleTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Google Test --&gt;
+  &lt;test name=&quot;Football Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Slava.FootballTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Football Test --&gt;
 &lt;/suite&gt; &lt;!-- TestAll --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -166,6 +286,9 @@
             <ul>
               <li>
                 <span class="test-name">Google Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Football Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,16 +314,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'openHomePage')
-data.setCell(0, 2, 'Slava.GoogleTest')
-data.setCell(0, 3, 1868);
+data.setCell(0, 2, 'Slava.FootballTest')
+data.setCell(0, 3, 4557);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'openHomePage')
+data.setCell(1, 2, 'Slava.FootballTest')
+data.setCell(1, 3, 4265);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'openHomePage')
+data.setCell(2, 2, 'Slava.GoogleTest')
+data.setCell(2, 3, 2817);
 window.suiteTableData['TestAll']= { tableData: data, tableDiv: 'times-div-TestAll'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-TestAll">
               </div> <!-- times-div-TestAll -->
             </div> <!-- times-div -->
@@ -240,11 +371,32 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">openHomePage</span>
-                <span class="method-start">3194 ms</span>
+                <span class="method-start">3494 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5062 ms</span>
+                <span class="method-start">6313 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Slava.FootballTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7749 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">openHomePage</span>
+                <span class="method-start">10205 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">openHomePage</span>
+                <span class="method-start">15019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19561 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

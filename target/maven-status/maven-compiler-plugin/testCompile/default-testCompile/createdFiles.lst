@@ -1,4 +1,10 @@
-Slava\BaseTest.class
+reportutils\Listeners\AnnotationTransformer.class
 Slava\GoogleTest.class
+Slava\MapApp.class
 Slava\PhoneBookTest.class
+reportutils\ExtentReports\ExtentTestManager.class
+reportutils\Listeners\Retry.class
+Slava\BaseTest.class
+reportutils\ExtentReports\ExtentManager.class
 Slava\FootballTest.class
+reportutils\Listeners\TestListener.class

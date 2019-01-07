@@ -11,7 +11,7 @@ public class FootballTest extends BaseTest {
 
     private String expectedWrongURL= "https://www.google.com.ua2/";
 
-    @Test
+    @Test(description = "football.ua test description that should fail")
     public void openHomePage()
     {
         driver.get("https://www.football.ua");
