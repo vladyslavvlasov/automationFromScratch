@@ -69,10 +69,11 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.20.1</version>
+                    <version>3.0.0-M3</version>
                     <configuration>
                         <forkMode>never</forkMode>
                         <suiteXmlFiles>
+                            <!-- Suite testng xml file to consider for test execution -->
                             <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
